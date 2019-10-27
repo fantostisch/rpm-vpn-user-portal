@@ -268,45 +268,6 @@ fi
 * Sun Oct 27 2019 François Kooman <fkooman@tuxed.net> - 2.1.0-0.1
 - update to 2.1.0
 
-* Sun Oct 27 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.13
-- rebuilt
-
-* Sat Oct 26 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.12
-- rebuilt
-
-* Sat Oct 26 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.11
-- rebuilt
-
-* Tue Oct 22 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.10
-- rebuilt
-
-* Tue Oct 22 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.9
-- rebuilt
-
-* Tue Oct 22 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.8
-- rebuilt
-
-* Tue Oct 22 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.7
-- rebuilt
-
-* Sat Oct 19 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.6
-- rebuilt
-
-* Thu Oct 17 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.5
-- rebuilt
-
-* Thu Oct 17 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.4
-- rebuilt
-
-* Wed Oct 16 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.3
-- rebuilt
-
-* Wed Oct 16 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.2
-- rebuilt
-
-* Wed Oct 16 2019 François Kooman <fkooman@tuxed.net> - 2.0.15-0.1
-- update to 2.0.15
-
 * Mon Oct 14 2019 François Kooman <fkooman@tuxed.net> - 2.0.14-1
 - update to 2.0.14
 

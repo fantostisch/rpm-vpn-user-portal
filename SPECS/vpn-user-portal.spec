@@ -2,7 +2,7 @@
 
 Name:       vpn-user-portal
 Version:    2.1.0
-Release:    0.3%{?dist}
+Release:    0.4%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -261,10 +261,13 @@ fi
 %{_datadir}/vpn-user-portal/config
 %{_datadir}/vpn-user-portal/locale
 %dir %attr(0700,apache,apache) %{_localstatedir}/lib/vpn-user-portal
-%doc README.md CHANGES.md composer.json config/config.php.example CONFIG_CHANGES.md
+%doc README.md CHANGES.md composer.json config/config.php.example CONFIG_CHANGES.md locale/CREDITS.md
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Thu Oct 31 2019 François Kooman <fkooman@tuxed.net> - 2.1.0-0.4
+- rebuilt
+
 * Thu Oct 31 2019 François Kooman <fkooman@tuxed.net> - 2.1.0-0.3
 - rebuilt
 

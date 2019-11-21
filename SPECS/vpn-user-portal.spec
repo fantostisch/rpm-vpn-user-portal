@@ -1,8 +1,8 @@
-%global git 3a72c0156b3341a12bb02f3623799a8e1ef59498
+%global git 0ba825c1db4e7a1cb4ce9d45d963a8f82bddf8e0
 
 Name:       vpn-user-portal
 Version:    2.1.1
-Release:    0.11%{?dist}
+Release:    1%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -265,37 +265,7 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
-* Wed Nov 20 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.11
-- rebuilt
-
-* Wed Nov 20 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.10
-- rebuilt
-
-* Wed Nov 20 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.9
-- rebuilt
-
-* Tue Nov 19 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.8
-- rebuilt
-
-* Tue Nov 19 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.7
-- rebuilt
-
-* Tue Nov 19 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.6
-- rebuilt
-
-* Mon Nov 18 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.5
-- rebuilt
-
-* Mon Nov 18 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.4
-- rebuilt
-
-* Sun Nov 10 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.3
-- rebuilt
-
-* Sun Nov 10 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.2
-- rebuilt
-
-* Sun Nov 10 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-0.1
+* Thu Nov 21 2019 François Kooman <fkooman@tuxed.net> - 2.1.1-1
 - update to 2.1.1
 
 * Mon Nov 04 2019 François Kooman <fkooman@tuxed.net> - 2.1.0-1

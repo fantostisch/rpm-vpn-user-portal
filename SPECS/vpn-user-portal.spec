@@ -1,8 +1,8 @@
-%global git 2e59cc2dc434ffc9497fae7521188356ecc45a22
+%global git 654344a28e4410b7824e7c594b17fc2d054db1d8
 
 Name:       vpn-user-portal
 Version:    2.1.4
-Release:    0.4%{?dist}
+Release:    0.5%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -178,6 +178,7 @@ AUTOLOAD
 
 %install
 mkdir -p %{buildroot}%{_datadir}/vpn-user-portal
+cp VERSION %{buildroot}%{_datadir}/vpn-user-portal
 mkdir -p %{buildroot}%{_datadir}/php/LC/Portal
 cp -pr src/* %{buildroot}%{_datadir}/php/LC/Portal
 
@@ -265,6 +266,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Mon Dec 09 2019 François Kooman <fkooman@tuxed.net> - 2.1.4-0.5
+- rebuilt
+
 * Tue Dec 03 2019 François Kooman <fkooman@tuxed.net> - 2.1.4-0.4
 - rebuilt
 

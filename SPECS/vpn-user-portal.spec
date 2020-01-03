@@ -1,8 +1,8 @@
-%global git aae6f58ec9b30277ab7b2c150043cc2400a1dd2e
+%global git 0be97369e20d7bf3144f70134a59f07c340010fa
 
 Name:       vpn-user-portal
 Version:    2.1.5
-Release:    0.8%{?dist}
+Release:    0.9%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -56,10 +56,11 @@ BuildRequires:  phpunit
 #        "fkooman/secookie": "^2",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
-#        "paragonie/constant_time_encoding": "^1|^2",
+#        "paragonie/constant_time_encoding": "^1.0.3|^2.2.0",
 #        "paragonie/random_compat": "^1|^2",
 #        "paragonie/sodium_compat": "^1",
-#        "php": ">=5.4.0"
+#        "php": ">=5.4.0",
+#        "psr/log": "^1.1"
 #    },
 BuildRequires:  php(language) >= 5.4.0
 BuildRequires:  php-composer(bacon/bacon-qr-code) < 2.0.0
@@ -71,11 +72,12 @@ BuildRequires:  php-pdo
 BuildRequires:  php-spl
 BuildRequires:  php-composer(fkooman/jwt)
 BuildRequires:  php-composer(fkooman/oauth2-server)
+BuildRequires:  php-composer(fkooman/saml-sp)
 BuildRequires:  php-composer(fkooman/secookie)
 BuildRequires:  php-composer(fkooman/sqlite-migrate)
 BuildRequires:  php-composer(lc/common)
 BuildRequires:  php-composer(paragonie/constant_time_encoding)
-BuildRequires:  php-composer(fkooman/saml-sp)
+BuildRequires:  php-composer(psr/log)
 %if 0%{?fedora} < 28 && 0%{?rhel} < 8
 BuildRequires:  php-composer(paragonie/random_compat)
 %endif
@@ -107,10 +109,11 @@ Requires:   crontabs
 #        "fkooman/secookie": "^2",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
-#        "paragonie/constant_time_encoding": "^1|^2",
+#        "paragonie/constant_time_encoding": "^1.0.3|^2.2.0",
 #        "paragonie/random_compat": "^1|^2",
 #        "paragonie/sodium_compat": "^1",
-#        "php": ">=5.4.0"
+#        "php": ">=5.4.0",
+#        "psr/log": "^1.1"
 #    },
 Requires:   php(language) >= 5.4.0
 Requires:   php-cli
@@ -123,11 +126,12 @@ Requires:   php-pdo
 Requires:   php-spl
 Requires:   php-composer(fkooman/jwt)
 Requires:   php-composer(fkooman/oauth2-server)
+Requires:   php-composer(fkooman/saml-sp)
 Requires:   php-composer(fkooman/secookie)
 Requires:   php-composer(fkooman/sqlite-migrate)
 Requires:   php-composer(lc/common)
 Requires:   php-composer(paragonie/constant_time_encoding)
-Requires:   php-composer(fkooman/saml-sp)
+Requires:   php-composer(psr/log)
 %if 0%{?fedora} < 28 && 0%{?rhel} < 8
 Requires:   php-composer(paragonie/random_compat)
 %endif
@@ -168,6 +172,7 @@ require_once '%{_datadir}/php/fkooman/SeCookie/autoload.php';
 require_once '%{_datadir}/php/fkooman/SqliteMigrate/autoload.php';
 require_once '%{_datadir}/php/ParagonIE/ConstantTime/autoload.php';
 require_once '%{_datadir}/php/fkooman/SAML/SP/autoload.php';
+require_once '%{_datadir}/php/Psr/Log/autoload.php';
 AUTOLOAD
 %if 0%{?fedora} < 28 && 0%{?rhel} < 8
 cat <<'AUTOLOAD' | tee -a src/autoload.php
@@ -260,6 +265,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Fri Jan 03 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.9
+- rebuilt
+
 * Thu Jan 02 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.8
 - rebuilt
 

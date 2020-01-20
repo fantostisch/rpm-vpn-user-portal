@@ -1,8 +1,8 @@
-%global git 43249889aa3fcaf483b4a1735384e2747ad1e0b2
+#global git 46ea4ac8ddec64925d6821b6f745fe26aeca99a5
 
 Name:       vpn-user-portal
 Version:    2.1.5
-Release:    0.18%{?dist}
+Release:    1%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -267,58 +267,7 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
-* Mon Jan 20 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.18
-- rebuilt
-
-* Tue Jan 14 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.17
-- rebuilt
-
-* Mon Jan 13 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.16
-- rebuilt
-
-* Mon Jan 13 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.15
-- rebuilt
-
-* Mon Jan 13 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.14
-- rebuilt
-
-* Mon Jan 13 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.13
-- rebuilt
-
-* Mon Jan 13 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.12
-- rebuilt
-
-* Thu Jan 09 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.11
-- rebuilt
-
-* Mon Jan 06 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.10
-- rebuilt
-
-* Fri Jan 03 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.9
-- rebuilt
-
-* Thu Jan 02 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.8
-- rebuilt
-
-* Thu Jan 02 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-0.7
-- rebuilt
-
-* Sun Dec 29 2019 François Kooman <fkooman@tuxed.net> - 2.1.5-0.6
-- rebuilt
-
-* Mon Dec 23 2019 François Kooman <fkooman@tuxed.net> - 2.1.5-0.5
-- rebuilt
-
-* Mon Dec 16 2019 François Kooman <fkooman@tuxed.net> - 2.1.5-0.4
-- rebuilt
-
-* Mon Dec 16 2019 François Kooman <fkooman@tuxed.net> - 2.1.5-0.3
-- rebuilt
-
-* Sun Dec 15 2019 François Kooman <fkooman@tuxed.net> - 2.1.5-0.2
-- rebuilt
-
-* Thu Dec 12 2019 François Kooman <fkooman@tuxed.net> - 2.1.5-0.1
+* Mon Jan 20 2020 François Kooman <fkooman@tuxed.net> - 2.1.5-1
 - update to 2.1.5
 - be explicit about fkooman/secookie version
 

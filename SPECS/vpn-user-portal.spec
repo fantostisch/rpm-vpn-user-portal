@@ -1,8 +1,8 @@
-#global git 632880d271b7f6e93079b79d4bde33c267745276
+%global git b340b9f9b963118cb38f140999aeb601ba3d0c72
 
 Name:       vpn-user-portal
-Version:    2.1.6
-Release:    1%{?dist}
+Version:    2.2.0
+Release:    0.1%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -53,7 +53,7 @@ BuildRequires:  phpunit
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
 #        "fkooman/php-saml-sp": "^0.2",
-#        "fkooman/secookie": "^2",
+#        "fkooman/secookie": "dev-master",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
 #        "paragonie/constant_time_encoding": "^1.0.3|^2.2.0",
@@ -73,8 +73,8 @@ BuildRequires:  php-spl
 BuildRequires:  php-composer(fkooman/jwt)
 BuildRequires:  php-composer(fkooman/oauth2-server)
 BuildRequires:  php-composer(fkooman/saml-sp)
-BuildRequires:  php-composer(fkooman/secookie) >= 2
-BuildRequires:  php-composer(fkooman/secookie) < 3
+BuildRequires:  php-composer(fkooman/secookie) >= 3
+BuildRequires:  php-composer(fkooman/secookie) < 4
 BuildRequires:  php-composer(fkooman/sqlite-migrate)
 BuildRequires:  php-composer(lc/common)
 BuildRequires:  php-composer(paragonie/constant_time_encoding)
@@ -107,7 +107,7 @@ Requires:   crontabs
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
 #        "fkooman/php-saml-sp": "^0.2",
-#        "fkooman/secookie": "^2",
+#        "fkooman/secookie": "dev-master",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
 #        "paragonie/constant_time_encoding": "^1.0.3|^2.2.0",
@@ -128,8 +128,8 @@ Requires:   php-spl
 Requires:   php-composer(fkooman/jwt)
 Requires:   php-composer(fkooman/oauth2-server)
 Requires:   php-composer(fkooman/saml-sp)
-Requires:   php-composer(fkooman/secookie) >= 2
-Requires:   php-composer(fkooman/secookie) < 3
+Requires:   php-composer(fkooman/secookie) >= 3
+Requires:   php-composer(fkooman/secookie) < 4
 Requires:   php-composer(fkooman/sqlite-migrate)
 Requires:   php-composer(lc/common)
 Requires:   php-composer(paragonie/constant_time_encoding)
@@ -267,6 +267,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Tue Jan 21 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.1
+- update to 2.2.0
+
 * Mon Jan 20 2020 François Kooman <fkooman@tuxed.net> - 2.1.6-1
 - update to 2.1.6
 

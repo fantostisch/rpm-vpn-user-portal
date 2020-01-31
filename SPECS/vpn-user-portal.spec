@@ -2,7 +2,7 @@
 
 Name:       vpn-user-portal
 Version:    2.2.0
-Release:    0.16%{?dist}
+Release:    0.17%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -73,8 +73,8 @@ BuildRequires:  php-spl
 BuildRequires:  php-composer(fkooman/jwt)
 BuildRequires:  php-composer(fkooman/oauth2-server)
 BuildRequires:  php-composer(fkooman/saml-sp)
-BuildRequires:  php-composer(fkooman/secookie) >= 3
-BuildRequires:  php-composer(fkooman/secookie) < 4
+BuildRequires:  php-composer(fkooman/secookie) >= 4
+BuildRequires:  php-composer(fkooman/secookie) < 5
 BuildRequires:  php-composer(fkooman/sqlite-migrate)
 BuildRequires:  php-composer(lc/common)
 BuildRequires:  php-composer(paragonie/constant_time_encoding)
@@ -128,8 +128,8 @@ Requires:   php-spl
 Requires:   php-composer(fkooman/jwt)
 Requires:   php-composer(fkooman/oauth2-server)
 Requires:   php-composer(fkooman/saml-sp)
-Requires:   php-composer(fkooman/secookie) >= 3
-Requires:   php-composer(fkooman/secookie) < 4
+Requires:   php-composer(fkooman/secookie) >= 4
+Requires:   php-composer(fkooman/secookie) < 5
 Requires:   php-composer(fkooman/sqlite-migrate)
 Requires:   php-composer(lc/common)
 Requires:   php-composer(paragonie/constant_time_encoding)
@@ -267,6 +267,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Fri Jan 31 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.17
+- rebuilt
+
 * Fri Jan 31 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.16
 - rebuilt
 

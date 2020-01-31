@@ -2,7 +2,7 @@
 
 Name:       vpn-user-portal
 Version:    2.2.0
-Release:    0.17%{?dist}
+Release:    0.18%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -267,6 +267,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Fri Jan 31 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.18
+- rebuilt
+
 * Fri Jan 31 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.17
 - rebuilt
 

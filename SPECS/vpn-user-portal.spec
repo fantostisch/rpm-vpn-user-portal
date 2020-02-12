@@ -1,8 +1,8 @@
-%global git 0f916243379576d4dec989f13c75826e98ff499a
+%global git 4bc64d498841b86905a364a93a7c02cb6548dc5f
 
 Name:       vpn-user-portal
 Version:    2.2.0
-Release:    0.20%{?dist}
+Release:    0.21%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -52,7 +52,7 @@ BuildRequires:  phpunit
 #        "ext-spl": "*",
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
-#        "fkooman/saml-sp": "dev-master",
+#        "fkooman/saml-sp": "^0.3",
 #        "fkooman/secookie": "^4",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
@@ -72,7 +72,8 @@ BuildRequires:  php-pdo
 BuildRequires:  php-spl
 BuildRequires:  php-composer(fkooman/jwt)
 BuildRequires:  php-composer(fkooman/oauth2-server)
-BuildRequires:  php-composer(fkooman/saml-sp)
+BuildRequires:  php-composer(fkooman/saml-sp) >= 0.3
+BuildRequires:  php-composer(fkooman/saml-sp) < 0.4
 BuildRequires:  php-composer(fkooman/secookie) >= 4
 BuildRequires:  php-composer(fkooman/secookie) < 5
 BuildRequires:  php-composer(fkooman/sqlite-migrate)
@@ -106,7 +107,7 @@ Requires:   crontabs
 #        "ext-spl": "*",
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
-#        "fkooman/saml-sp": "dev-master",
+#        "fkooman/saml-sp": "^0.3",
 #        "fkooman/secookie": "^4",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
@@ -127,7 +128,8 @@ Requires:   php-pdo
 Requires:   php-spl
 Requires:   php-composer(fkooman/jwt)
 Requires:   php-composer(fkooman/oauth2-server)
-Requires:   php-composer(fkooman/saml-sp)
+Requires:   php-composer(fkooman/saml-sp) >= 0.3
+Requires:   php-composer(fkooman/saml-sp) < 0.4
 Requires:   php-composer(fkooman/secookie) >= 4
 Requires:   php-composer(fkooman/secookie) < 5
 Requires:   php-composer(fkooman/sqlite-migrate)
@@ -267,6 +269,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Wed Feb 12 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.21
+- rebuilt
+
 * Mon Feb 10 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.20
 - rebuilt
 

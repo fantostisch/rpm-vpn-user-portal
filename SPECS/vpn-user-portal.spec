@@ -1,8 +1,8 @@
-%global git 2ed7c99981397ac145314b6d01f8edf6673443b0
+#global git c6e130375a16a30398db579d9a9ec66b58da29a4
 
 Name:       vpn-user-portal
 Version:    2.2.0
-Release:    0.23%{?dist}
+Release:    1%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -269,70 +269,7 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
-* Thu Feb 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.23
-- rebuilt
-
-* Thu Feb 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.22
-- rebuilt
-
-* Wed Feb 12 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.21
-- rebuilt
-
-* Mon Feb 10 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.20
-- rebuilt
-
-* Mon Feb 03 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.19
-- rebuilt
-
-* Fri Jan 31 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.18
-- rebuilt
-
-* Fri Jan 31 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.17
-- rebuilt
-
-* Fri Jan 31 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.16
-- rebuilt
-
-* Thu Jan 30 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.15
-- rebuilt
-
-* Thu Jan 30 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.14
-- rebuilt
-
-* Wed Jan 29 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.13
-- rebuilt
-
-* Wed Jan 29 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.12
-- rebuilt
-
-* Wed Jan 29 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.11
-- rebuilt
-
-* Mon Jan 27 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.10
-- rebuilt
-
-* Fri Jan 24 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.9
-- rebuilt
-
-* Fri Jan 24 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.8
-- rebuilt
-
-* Wed Jan 22 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.7
-- rebuilt
-
-* Wed Jan 22 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.5
-- rebuilt
-
-* Wed Jan 22 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.4
-- rebuilt
-
-* Wed Jan 22 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.3
-- rebuilt
-
-* Tue Jan 21 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.2
-- rebuilt
-
-* Tue Jan 21 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-0.1
+* Thu Feb 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.0-1
 - update to 2.2.0
 
 * Mon Jan 20 2020 François Kooman <fkooman@tuxed.net> - 2.1.6-1

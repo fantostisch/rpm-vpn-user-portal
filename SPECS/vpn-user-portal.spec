@@ -1,8 +1,8 @@
-%global git 92b3427b17e37ea79539abfe56985e69686cf5dd
+%global git febb2c6222f92c45bc4da6e40a9ba017bad23536
 
 Name:       vpn-user-portal
 Version:    2.2.9
-Release:    0.11%{?dist}
+Release:    0.12%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -269,6 +269,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Thu Jun 11 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.12
+- rebuilt
+
 * Tue Jun 09 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.11
 - rebuilt
 

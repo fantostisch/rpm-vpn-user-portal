@@ -1,8 +1,8 @@
-%global git 361fdd6d0210c280a7d5dd6b5a412a40ae92dc5b
+%global git a9ef465fd14043c4ad9a209add6d406ae55e1c69
 
 Name:       vpn-user-portal
 Version:    2.2.9
-Release:    0.26%{?dist}
+Release:    0.28%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -52,7 +52,6 @@ BuildRequires:  phpunit
 #        "ext-spl": "*",
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
-#        "fkooman/saml-sp": "^0.3",
 #        "fkooman/secookie": "^4",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
@@ -72,8 +71,6 @@ BuildRequires:  php-pdo
 BuildRequires:  php-spl
 BuildRequires:  php-composer(fkooman/jwt)
 BuildRequires:  php-composer(fkooman/oauth2-server)
-BuildRequires:  php-composer(fkooman/saml-sp) >= 0.4
-BuildRequires:  php-composer(fkooman/saml-sp) < 0.5
 BuildRequires:  php-composer(fkooman/secookie) >= 4
 BuildRequires:  php-composer(fkooman/secookie) < 5
 BuildRequires:  php-composer(fkooman/sqlite-migrate)
@@ -107,7 +104,6 @@ Requires:   crontabs
 #        "ext-spl": "*",
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
-#        "fkooman/saml-sp": "^0.3",
 #        "fkooman/secookie": "^4",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
@@ -128,8 +124,6 @@ Requires:   php-pdo
 Requires:   php-spl
 Requires:   php-composer(fkooman/jwt)
 Requires:   php-composer(fkooman/oauth2-server)
-Requires:   php-composer(fkooman/saml-sp) >= 0.4
-Requires:   php-composer(fkooman/saml-sp) < 0.5
 Requires:   php-composer(fkooman/secookie) >= 4
 Requires:   php-composer(fkooman/secookie) < 5
 Requires:   php-composer(fkooman/sqlite-migrate)
@@ -175,8 +169,11 @@ require_once '%{_datadir}/php/fkooman/OAuth/Server/autoload.php';
 require_once '%{_datadir}/php/fkooman/SeCookie/autoload.php';
 require_once '%{_datadir}/php/fkooman/SqliteMigrate/autoload.php';
 require_once '%{_datadir}/php/ParagonIE/ConstantTime/autoload.php';
-require_once '%{_datadir}/php/fkooman/SAML/SP/autoload.php';
 require_once '%{_datadir}/php/Psr/Log/autoload.php';
+# optional dependency
+if (is_file('%{_datadir}/php/fkooman/SAML/SP/autoload.php') && is_readable('%{_datadir}/php/fkooman/SAML/SP/autoload.php')) {
+    require_once '%{_datadir}/php/fkooman/SAML/SP/autoload.php';
+}
 AUTOLOAD
 %if 0%{?fedora} < 28 && 0%{?rhel} < 8
 cat <<'AUTOLOAD' | tee -a src/autoload.php
@@ -269,6 +266,12 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Tue Jun 16 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.28
+- rebuilt
+
+* Tue Jun 16 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.27
+- rebuilt
+
 * Tue Jun 16 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.26
 - rebuilt
 

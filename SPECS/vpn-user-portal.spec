@@ -1,8 +1,8 @@
-%global git eecc63f48d57bad4c1aa26c5df62c055b62a366f
+#global git 58cf9cbf8870d1fb747a9972c1c0a3be6d5b3043
 
 Name:       vpn-user-portal
-Version:    2.2.9
-Release:    0.40%{?dist}
+Version:    2.3.0
+Release:    1%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -266,125 +266,8 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
-* Mon Jun 22 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.40
-- rebuilt
-
-* Mon Jun 22 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.39
-- rebuilt
-
-* Sat Jun 20 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.38
-- rebuilt
-
-* Sat Jun 20 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.37
-- rebuilt
-
-* Sat Jun 20 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.36
-- rebuilt
-
-* Sat Jun 20 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.35
-- rebuilt
-
-* Wed Jun 17 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.34
-- rebuilt
-
-* Wed Jun 17 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.33
-- rebuilt
-
-* Wed Jun 17 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.32
-- rebuilt
-
-* Wed Jun 17 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.31
-- rebuilt
-
-* Wed Jun 17 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.30
-- rebuilt
-
-* Wed Jun 17 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.29
-- rebuilt
-
-* Tue Jun 16 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.28
-- rebuilt
-
-* Tue Jun 16 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.27
-- rebuilt
-
-* Tue Jun 16 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.26
-- rebuilt
-
-* Mon Jun 15 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.25
-- rebuilt
-
-* Mon Jun 15 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.24
-- rebuilt
-
-* Sun Jun 14 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.23
-- rebuilt
-
-* Sun Jun 14 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.22
-- rebuilt
-
-* Sun Jun 14 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.21
-- rebuilt
-
-* Sat Jun 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.20
-- rebuilt
-
-* Sat Jun 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.19
-- rebuilt
-
-* Sat Jun 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.18
-- rebuilt
-
-* Sat Jun 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.17
-- rebuilt
-
-* Sat Jun 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.16
-- rebuilt
-
-* Sat Jun 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.15
-- rebuilt
-
-* Sat Jun 13 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.14
-- rebuilt
-
-* Thu Jun 11 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.13
-- rebuilt
-
-* Thu Jun 11 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.12
-- rebuilt
-
-* Tue Jun 09 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.11
-- rebuilt
-
-* Tue Jun 09 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.10
-- rebuilt
-
-* Mon Jun 08 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.9
-- rebuilt
-
-* Mon Jun 08 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.8
-- rebuilt
-
-* Mon Jun 08 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.7
-- rebuilt
-
-* Mon Jun 08 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.6
-- rebuilt
-
-* Sun Jun 07 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.5
-- rebuilt
-
-* Sun Jun 07 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.4
-- rebuilt
-
-* Sun Jun 07 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.3
-- rebuilt
-
-* Wed Jun 03 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.2
-- rebuilt
-
-* Wed Jun 03 2020 François Kooman <fkooman@tuxed.net> - 2.2.9-0.1
-- update to 2.2.9
+* Mon Jun 29 2020 François Kooman <fkooman@tuxed.net> - 2.3.0-1
+- update to 2.3.0
 
 * Tue May 26 2020 François Kooman <fkooman@tuxed.net> - 2.2.8-1
 - update to 2.2.8

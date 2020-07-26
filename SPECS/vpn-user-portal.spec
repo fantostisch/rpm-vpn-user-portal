@@ -1,8 +1,8 @@
-%global git 0c7fb60c902830148bde0c888bccb2c8c251e29d
+%global git 53bc4400ba552dd8b1023637b369ff05cf8e5729
 
 Name:       vpn-user-portal
 Version:    2.3.2
-Release:    0.2%{?dist}
+Release:    0.3%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -43,7 +43,6 @@ BuildRequires:  phpunit
 %endif
 
 #    "require": {
-#        "bacon/bacon-qr-code": "^1.0",
 #        "ext-curl": "*",
 #        "ext-date": "*",
 #        "ext-hash": "*",
@@ -62,7 +61,6 @@ BuildRequires:  phpunit
 #        "psr/log": "^1.1"
 #    },
 BuildRequires:  php(language) >= 5.4.0
-BuildRequires:  php-composer(bacon/bacon-qr-code) < 2.0.0
 BuildRequires:  php-curl
 BuildRequires:  php-date
 BuildRequires:  php-hash
@@ -93,9 +91,9 @@ Requires:   httpd-filesystem
 # EL7 does not have httpd-filesystem
 Requires:   httpd
 %endif
+Requires:   /usr/bin/qrencode
 Requires:   crontabs
 #    "require": {
-#        "bacon/bacon-qr-code": "^1.0",
 #        "ext-curl": "*",
 #        "ext-date": "*",
 #        "ext-hash": "*",
@@ -115,7 +113,6 @@ Requires:   crontabs
 #    },
 Requires:   php(language) >= 5.4.0
 Requires:   php-cli
-Requires:   php-composer(bacon/bacon-qr-code) < 2.0.0
 Requires:   php-curl
 Requires:   php-date
 Requires:   php-hash
@@ -162,7 +159,6 @@ VPN User Portal.
 %build
 %{_bindir}/phpab -t fedora -o src/autoload.php src
 cat <<'AUTOLOAD' | tee -a src/autoload.php
-require_once '%{_datadir}/php/BaconQrCode/autoload.php';
 require_once '%{_datadir}/php/LC/Common/autoload.php';
 require_once '%{_datadir}/php/fkooman/Jwt/autoload.php';
 require_once '%{_datadir}/php/fkooman/OAuth/Server/autoload.php';
@@ -266,6 +262,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Sun Jul 26 2020 François Kooman <fkooman@tuxed.net> - 2.3.2-0.3
+- rebuilt
+
 * Wed Jul 15 2020 François Kooman <fkooman@tuxed.net> - 2.3.2-0.2
 - rebuilt
 

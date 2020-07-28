@@ -1,8 +1,8 @@
-#global git 3a850e1df3b81811623ffcce7823359915661fba
+%global git b503db72b2e9968bd36c817c4f3c7cdd1c050333
 
 Name:       vpn-user-portal
-Version:    2.3.2
-Release:    1%{?dist}
+Version:    2.3.3
+Release:    0.2%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -52,7 +52,7 @@ BuildRequires:  phpunit
 #        "ext-spl": "*",
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
-#        "fkooman/secookie": "^4",
+#        "fkooman/secookie": "^5",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
 #        "paragonie/constant_time_encoding": "^1.0.3|^2.2.0",
@@ -70,8 +70,8 @@ BuildRequires:  php-pdo
 BuildRequires:  php-spl
 BuildRequires:  php-composer(fkooman/jwt)
 BuildRequires:  php-composer(fkooman/oauth2-server)
-BuildRequires:  php-composer(fkooman/secookie) >= 4
-BuildRequires:  php-composer(fkooman/secookie) < 5
+BuildRequires:  php-composer(fkooman/secookie) >= 5
+BuildRequires:  php-composer(fkooman/secookie) < 6
 BuildRequires:  php-composer(fkooman/sqlite-migrate)
 BuildRequires:  php-composer(lc/common)
 BuildRequires:  php-composer(paragonie/constant_time_encoding)
@@ -104,7 +104,7 @@ Requires:   crontabs
 #        "ext-spl": "*",
 #        "fkooman/jwt": "^1",
 #        "fkooman/oauth2-server": "^6",
-#        "fkooman/secookie": "^4",
+#        "fkooman/secookie": "^5",
 #        "fkooman/sqlite-migrate": "^0",
 #        "lc/common": "v2.x-dev",
 #        "paragonie/constant_time_encoding": "^1.0.3|^2.2.0",
@@ -123,8 +123,8 @@ Requires:   php-pdo
 Requires:   php-spl
 Requires:   php-composer(fkooman/jwt)
 Requires:   php-composer(fkooman/oauth2-server)
-Requires:   php-composer(fkooman/secookie) >= 4
-Requires:   php-composer(fkooman/secookie) < 5
+Requires:   php-composer(fkooman/secookie) >= 5
+Requires:   php-composer(fkooman/secookie) < 6
 Requires:   php-composer(fkooman/sqlite-migrate)
 Requires:   php-composer(lc/common)
 Requires:   php-composer(paragonie/constant_time_encoding)
@@ -264,6 +264,12 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Tue Jul 28 2020 François Kooman <fkooman@tuxed.net> - 2.3.3-0.2
+- rebuilt
+
+* Tue Jul 28 2020 François Kooman <fkooman@tuxed.net> - 2.3.3-0.1
+- update to 2.3.3
+
 * Mon Jul 27 2020 François Kooman <fkooman@tuxed.net> - 2.3.2-1
 - update to 2.3.2
 

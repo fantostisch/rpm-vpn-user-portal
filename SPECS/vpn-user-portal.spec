@@ -2,16 +2,16 @@
 
 Name:       vpn-user-portal
 Version:    2.3.3
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    VPN User Portal
 Group:      Applications/Internet
 License:    AGPLv3+
-URL:        https://github.com/eduvpn/vpn-user-portal
+URL:        https://src.tuxed.net/vpn-user-portal
 %if %{defined git}
-Source0:    https://github.com/eduvpn/vpn-user-portal/archive/%{git}/vpn-user-portal-%{version}-%{git}.tar.gz
+Source0:    https://git.tuxed.net/LC/vpn-user-portal/snapshot/vpn-user-portal-%{git}.tar.gz
 %else
-Source0:    https://github.com/eduvpn/vpn-user-portal/releases/download/%{version}/vpn-user-portal-%{version}.tar.xz
-Source1:    https://github.com/eduvpn/vpn-user-portal/releases/download/%{version}/vpn-user-portal-%{version}.tar.xz.minisig
+Source0:    https://src.tuxed.net/vpn-user-portal/vpn-user-portal-%{version}.tar.xz
+Source1:    https://src.tuxed.net/vpn-user-portal/vpn-user-portal-%{version}.tar.xz.minisig
 Source2:    minisign-8466FFE127BCDC82.pub
 %endif
 Source3:    vpn-user-portal-httpd.conf
@@ -264,6 +264,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Tue Aug 04 2020 François Kooman <fkooman@tuxed.net> - 2.3.3-2
+- release files moved to src.tuxed.net
+
 * Tue Jul 28 2020 François Kooman <fkooman@tuxed.net> - 2.3.3-1
 - update to 2.3.3
 

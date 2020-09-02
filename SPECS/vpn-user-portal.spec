@@ -1,8 +1,8 @@
-#global git a1f9ec2b472def12c6c7ea1dbb00c50b8b6829d7
+%global git 97d3b794e3fff1a2c4d5ae3450a9f72d678de9d2
 
 Name:       vpn-user-portal
-Version:    2.3.3
-Release:    5%{?dist}
+Version:    2.3.4
+Release:    0.1%{?dist}
 Summary:    User and admin portal for Let's Connect! and eduVPN
 Group:      Applications/Internet
 License:    AGPLv3+
@@ -264,6 +264,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Wed Sep 02 2020 François Kooman <fkooman@tuxed.net> - 2.3.4-0.1
+- update to 2.3.4
+
 * Thu Aug 20 2020 François Kooman <fkooman@tuxed.net> - 2.3.3-5
 - convert php-sodium to php-libsodium functions/constants on el7
 

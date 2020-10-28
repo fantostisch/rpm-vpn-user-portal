@@ -1,14 +1,14 @@
-#global git 456f35888e40027f13f86d1844132d3d33a65aa9
+%global git 2660ee4f0058e7a657365472038f3566390e0d83
 
 Name:       vpn-user-portal
 Version:    2.3.5
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    User and admin portal for Let's Connect! and eduVPN
 Group:      Applications/Internet
 License:    AGPLv3+
 URL:        https://git.tuxed.net/LC/vpn-user-portal/about/
 %if %{defined git}
-Source0:    https://git.tuxed.net/LC/vpn-user-portal/snapshot/vpn-user-portal-%{git}.tar.gz
+Source0:    https://github.com/fantostisch/vpn-user-portal/archive/%{git}.tar.gz
 %else
 Source0:    https://src.tuxed.net/vpn-user-portal/vpn-user-portal-%{version}.tar.xz
 Source1:    https://src.tuxed.net/vpn-user-portal/vpn-user-portal-%{version}.tar.xz.minisig
@@ -264,6 +264,9 @@ fi
 %license LICENSE LICENSE.spdx
 
 %changelog
+* Tue Oct 28 2020 Nick Aquina <nickaquina@gmail.com> - 2.3.5-2
+- WireGuard version
+
 * Tue Oct 20 2020 François Kooman <fkooman@tuxed.net> - 2.3.5-1
 - update to 2.3.5
 
